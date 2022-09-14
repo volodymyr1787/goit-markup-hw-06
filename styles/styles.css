@@ -287,14 +287,12 @@ img {
     height: 581px;
     left: 50%;
     top: 50%;
+    padding: 40px;
     transform: translate(-50%, -50%);
     
     background: var(--primary-white-fon);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-
-    
-    
+    border-radius: 4px; 
 }
 
 .modal-btn {
@@ -313,6 +311,39 @@ img {
     border-radius: 50%;
 
     cursor: pointer;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title {
+    font-size: 12px;
+    line-height: 1.15;
+    
+    letter-spacing: 0.01em;
+    
+    color: var(--item-text-color);
+}
+
+.form-in {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.textarea-block {
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 }
 
 /* section */
