@@ -269,16 +269,18 @@ img {
     z-index: 1;
 
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: visibility,opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    
-
 }
+
+.backdrop.is-hidden .modal {}
 
 .modal {
     display: block;
@@ -312,6 +314,7 @@ img {
 
     cursor: pointer;
 }
+
 
 .modal-icon {
     fill: var(--black-text-color);
@@ -446,6 +449,11 @@ img {
     transition-property: background-image;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-agree {
+    line-height: 1.71;
+    color: var(--item-text-color);
 }
 
 .checkbox {
@@ -793,7 +801,6 @@ img {
 
 .footer-blocks {
     display: flex;
-    gap: 70px;
     align-items: baseline;
 }
 
@@ -805,6 +812,10 @@ img {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+}
+
+.footer-socials {
+    margin-left: 70px;
 }
 
 .footer-soc {
@@ -826,6 +837,10 @@ img {
     text-transform: uppercase;
 }
 
+.footer-form {
+    margin-left: auto;
+}
+
 .form-subscribe {
     display: flex;
     gap: 12px;
@@ -841,6 +856,12 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+}
+
+.form-mail:focus,
+.form-mail:hover {
+    background-color: var(--dark-fon);
+    color: var(--white-text-color);
 }
 
 .form-mail::placeholder {
