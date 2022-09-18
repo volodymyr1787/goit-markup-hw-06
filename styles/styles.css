@@ -454,6 +454,7 @@ img {
 .text-agree {
     line-height: 1.71;
     color: var(--item-text-color);
+    cursor: pointer;
 }
 
 .checkbox {
